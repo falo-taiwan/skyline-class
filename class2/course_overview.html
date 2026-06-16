@@ -127,6 +127,55 @@
         </p>
       </div>
 
+      <div style="margin-top: 1.5rem; padding: 1.5rem; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border); border-radius: 12px;">
+        <h3 style="color: var(--color-secondary); margin-top: 0; display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem;">
+          🛡️ 企業 AI 雙軌防禦與授權架構 (AI Governance)
+        </h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          為了兼顧「轉型效率」與「資安紅線」，本課程教材與工具的設計遵循以下雙軌授權原則：
+        </p>
+        
+        <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+          <!-- 由於我們在側邊欄內置有媒體查詢或自適應，因此用 grid 來實現左右分欄，並在小螢幕時自動垂直排列 -->
+          <style>
+            @media (min-width: 768px) {
+              .gov-container {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr !important;
+                gap: 1.5rem !important;
+              }
+            }
+          </style>
+          <div class="gov-container" style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <!-- 左欄：主管授權軌 -->
+            <div style="background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.2); padding: 1.2rem; border-radius: 8px;">
+              <h4 style="color: var(--color-primary-light); margin-top: 0; font-size: 0.95rem; font-weight: bold; display: flex; align-items: center; gap: 0.25rem;">👑 高階/被授權主管 (Agent 模式)</h4>
+              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-main); margin-bottom: 0.75rem; margin-top: 0.5rem;">
+                主管獲授權調用 <strong>Autonomous Agent (自主代理人)</strong> 進行端到端自動化：
+              </p>
+              <ul style="font-size: 0.8rem; color: var(--text-muted); padding-left: 1.2rem; line-height: 1.6; margin: 0;">
+                <li>實體工具調用：自動化檔案讀寫、指令執行、資料庫建置。</li>
+                <li>人機協同決策：Agent 提出計畫，主管審查確認後一鍵放行。</li>
+                <li>高槓桿產出：以「指揮官」思維啟動複雜的多步驟工作流。</li>
+              </ul>
+            </div>
+            
+            <!-- 右欄：同仁受控軌 -->
+            <div style="background: rgba(168, 85, 247, 0.05); border: 1px solid rgba(168, 85, 247, 0.2); padding: 1.2rem; border-radius: 8px;">
+              <h4 style="color: var(--color-secondary); margin-top: 0; font-size: 0.95rem; font-weight: bold; display: flex; align-items: center; gap: 0.25rem;">👥 一般同仁 (受控 Controlled 模式)</h4>
+              <p style="font-size: 0.85rem; line-height: 1.5; color: var(--text-main); margin-bottom: 0.75rem; margin-top: 0.5rem;">
+                同仁在<strong>明確的安全邊界與沙盒中</strong>運用 AI 提升日常效率：
+              </p>
+              <ul style="font-size: 0.8rem; color: var(--text-muted); padding-left: 1.2rem; line-height: 1.6; margin: 0;">
+                <li>受控提示詞：透過 Chrome 外掛與 PWA 控制台一鍵渲染標準範本。</li>
+                <li>封閉式真理庫：使用 NotebookLM 對去識別化的得標標案進行安全檢索。</li>
+                <li>資安防禦：不開放程式碼執行權限，確保零漏失與無越權操作。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
         我們將整體學習脈絡收斂為以下五大核心主題，請點選對應的主題按鈕或側邊欄連結開始探索：
       </p>
