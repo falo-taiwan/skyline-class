@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧭 其他輔助教材與工具 - Skyline Class02</title>
+  <link rel="stylesheet" href="docs/style.css">
+  <style>
+    .others-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .others-section {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .others-section:hover {
+      border-color: var(--color-secondary);
+      background: rgba(168, 85, 247, 0.05);
+    }
+    .others-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .others-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .others-desc {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+    .others-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(168, 85, 247, 0.2);
+      border: 1px solid var(--color-secondary);
+      color: white !important;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .others-btn:hover {
+      background: var(--color-secondary);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 側邊欄導覽 (會由指令碼動態覆寫) -->
+    <nav class="sidebar">
+    <div class="sidebar-brand">
+      Skyline Class <span>class2</span>
+    </div>
+    <div class="sidebar-menu-title">引導總覽</div>
+    <ul class="sidebar-menu">
+      <li><a href="course_overview.html" class="sidebar-link">🚀 本次課程說明</a></li>
+      <li><a href="practical/index.html" class="sidebar-link">🚀 Google產品實戰</a></li>
+      <li><a href="agent_tools_guide.html" class="sidebar-link">🤖 Agent 工具使用指南</a></li>
+      <li><a href="notebooklm_master_guide.html" class="sidebar-link">📘 AI Notebooklm 使用指南</a></li>
+      <li><a href="prompt_hub_guide.html" class="sidebar-link">💬 Skyline Prompt 提示詞管理專案</a></li>
+    </ul>
+    <div class="sidebar-menu-title">參考資源</div>
+    <ul class="sidebar-menu">
+      <li><a href="demo/ai-parser-demo1/index.html" target="_blank" class="sidebar-link">🥗 ETL 轉運站 (爬蟲展示)</a></li>
+      <li><a href="https://falo-taiwan.github.io/ai-ocr-demo/" target="_blank" class="sidebar-link">🔍 AI OCR 辨識專案</a></li>
+      <li><a href="https://falo-taiwan.github.io/video-analysis-optimization" target="_blank" class="sidebar-link">🎥 影音分析與優化專案</a></li>
+      <li><a href="ai_finance_demo.html" target="_blank" class="sidebar-link">📊 AI 財會與稅務自動化專案</a></li>
+    </ul>
+  </nav>
+
+  <!-- 主內容區 -->
+  <main class="main-content">
+    <div class="card">
+      <h1>🧭 其他輔助教材與工具總覽</h1>
+      <p style="color: var(--color-secondary); font-weight: 600;">Other Supporting Materials & Tools</p>
+      <p style="margin-top: 1rem;">
+        本頁面收錄了 Skyline Class02 的其他輔助學習教材、投標控制塔 POC 系統、地端 AI PM 架構圖及歷史版本參考資源。
+      </p>
+
+      <div class="others-grid">
+        <!-- 1. 專案啟動說明 -->
+        <div class="others-section">
+          <div>
+            <div class="others-header">
+              <span style="font-size: 1.5rem;">🚀</span>
+              <div class="others-title">專案啟動說明</div>
+            </div>
+            <p class="others-desc">
+              本專案的最初啟動背景介紹，包含 Skyline AI 虛擬團隊的角色分工、GitHub 共享記憶體（Shared Workspace）的協作原則。
+            </p>
+          </div>
+          <a href="README.html" target="_blank" class="others-btn">開啟說明 ➔</a>
+        </div>
+
+        <!-- 2. 教材工作台 -->
+        <div class="others-section">
+          <div>
+            <div class="others-header">
+              <span style="font-size: 1.5rem;">🧭</span>
+              <div class="others-title">教材工作台</div>
+            </div>
+            <p class="others-desc">
+              全套實戰工作台。包含各章節的實作步驟、代碼區塊與環境檢查指引，是學員進行人機協作練習的主入口。
+            </p>
+          </div>
+          <a href="workbench/index.html" target="_blank" class="others-btn">進入工作台 ➔</a>
+        </div>
+
+        <!-- 3. Skyline 模型菜組合包範例 -->
+        <div class="others-section">
+          <div>
+            <div class="others-header">
+              <span style="font-size: 1.5rem;">🍱</span>
+              <div class="others-title">模型菜組合包範例</div>
+            </div>
+            <p class="others-desc">
+              將 ETL 轉運站、提示詞外掛、NotebookLM 與 PM 架構整合的一體化實戰範例，說明企業智能投標工作流的運作脈絡。
+            </p>
+          </div>
+          <a href="skyline_set_menu.html" target="_blank" class="others-btn">檢視範例 ➔</a>
+        </div>
+
+        <!-- 4. 智慧投標控制塔 (POC) -->
+        <div class="others-section">
+          <div>
+            <div class="others-header">
+              <span style="font-size: 1.5rem;">🤖</span>
+              <div class="others-title">智慧投標控制塔 (POC)</div>
+            </div>
+            <p class="others-desc">
+              智慧投標概念驗證系統。模擬人機雙軌（簡單問答 vs 強 Agent）在合規審查、財務試算與 SLA 分析時的動態對照面板。
+            </p>
+          </div>
+          <a href="bidding_control_tower.html" target="_blank" class="others-btn">進入控制塔 ➔</a>
+        </div>
+
+        <!-- 5. 地端 AI PM 人機架構 -->
+        <div class="others-section">
+          <div>
+            <div class="others-header">
+              <span style="font-size: 1.5rem;">🖥️</span>
+              <div class="others-title">地端 AI PM 人機架構</div>
+            </div>
+            <p class="others-desc">
+              地端環境下 AI 與 PM 的人機協同工作流架構圖與運作機制說明，展示如何以最小成本跑起高效的企業工作流。
+            </p>
+          </div>
+          <a href="local_ai_pm_architecture.html" target="_blank" class="others-btn">檢視架構圖 ➔</a>
+        </div>
+
+        <!-- 6. 01 課程地圖 -->
+        <div class="others-section">
+          <div>
+            <div class="others-header">
+              <span style="font-size: 1.5rem;">🗺️</span>
+              <div class="others-title">01 課程地圖</div>
+            </div>
+            <p class="others-desc">
+              Class02 課程地圖與知識體系骨架導引，幫助學員建立整體的系統化學習脈絡。
+            </p>
+          </div>
+          <a href="docs/01_course_map.html" target="_blank" class="others-btn">開啟教材 ➔</a>
+        </div>
+
+        <!-- 7. 02 投標工作流 -->
+        <div class="others-section">
+          <div>
+            <div class="others-header">
+              <span style="font-size: 1.5rem;">⚙️</span>
+              <div class="others-title">02 投標工作流</div>
+            </div>
+            <p class="others-desc">
+              從標案下載、比對到建議書產出的自動化工作流說明，詳細拆解各階段 AI 介入點。
+            </p>
+          </div>
+          <a href="docs/02_tender_workflow.html" target="_blank" class="others-btn">開啟教材 ➔</a>
+        </div>
+
+        <!-- 8. 03 Multi-AI 協作 -->
+        <div class="others-section">
+          <div>
+            <div class="others-header">
+              <span style="font-size: 1.5rem;">👥</span>
+              <div class="others-title">03 Multi-AI 協作</div>
+            </div>
+            <p class="others-desc">
+              多個不同角色定位的 AI Agent（PM、Dev、Content 等）如何在大腦協調下進行協作的機制。
+            </p>
+          </div>
+          <a href="docs/03_multi_ai_collaboration.html" target="_blank" class="others-btn">開啟教材 ➔</a>
+        </div>
+
+        <!-- 9. 04 Artifact 管理 -->
+        <div class="others-section">
+          <div>
+            <div class="others-header">
+              <span style="font-size: 1.5rem;">🛡️</span>
+              <div class="others-title">04 Artifact 管理</div>
+            </div>
+            <p class="others-desc">
+              說明如何使用 AIDE Artifact 機制對中間產出的規格書、代碼與文件進行版本控制與品質管理。
+            </p>
+          </div>
+          <a href="docs/04_artifact_management.html" target="_blank" class="others-btn">開啟教材 ➔</a>
+        </div>
+
+        <!-- 10. 未來規劃備忘錄 -->
+        <div class="others-section">
+          <div>
+            <div class="others-header">
+              <span style="font-size: 1.5rem;">📝</span>
+              <div class="others-title">未來規劃備忘錄</div>
+            </div>
+            <p class="others-desc">
+              本課程後續版本的優化規劃與功能模組備忘錄，供講師與開發者參考。
+            </p>
+          </div>
+          <a href="memo.html" target="_blank" class="others-btn">開啟備忘錄 ➔</a>
+        </div>
+
+        <!-- 11. 歷史版本參考 -->
+        <div class="others-section">
+          <div>
+            <div class="others-header">
+              <span style="font-size: 1.5rem;">📚</span>
+              <div class="others-title">歷史版本參考</div>
+            </div>
+            <p class="others-desc">
+              收錄了講師的原始交付母稿、學員實作手冊指南以及歷史版本教材包。
+            </p>
+          </div>
+          <a href="reference/class02-antigravity/index.html" target="_blank" class="others-btn">進入參考區 ➔</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
