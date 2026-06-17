@@ -116,11 +116,11 @@ for root, dirs, filenames in os.walk(dest_root):
                 content = f.read()
             
             # Revert names & locations
-            content = content.replace("Julia", "辜芃榛")
+            content = content.replace("Julia", "林佳欣")
             content = content.replace("台西", "嘉義")
             
             # Revert executive titles if necessary
-            content = content.replace("G總", "辜總")
+            content = content.replace("G總", "蘇總")
             content = content.replace("C董", "陳董")
             
             # Ensure no "FALO" or "falo" or "地平線" or "Horizon" exists in the output
